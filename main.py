@@ -118,5 +118,10 @@ soup.title.string
 soup.title.parent.name
 # u'head'
 """
+soup.find_all('li')
+soup.find_all('')
+
+
+
 
 bughunter0.run()
