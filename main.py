@@ -84,7 +84,7 @@ async def scrapping(bot, message):
         )
         file_write = open(f'AllParagraph-{message.chat.username}.txt', 'a+')
         paragraph = ""
-        for para in soup.find_all('a'):  # Extracting all <p> tags
+        for para in soup.find_all('li'):  # Extracting all <p> tags
             paragraph = para.get_text()  # Getting Text from Paragraphs
             file_write.write(f"{paragraph}\n\n")  # writing to a file
         file_write.close()
